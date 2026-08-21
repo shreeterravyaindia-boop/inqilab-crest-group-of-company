@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SAHAYX - Your Health Assistance Partner</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Strip -->
+  <div class="top-strip">
+    <p>💚 Your trusted healthcare assistance partner</p>
+    <div>
+      <span>📞 Help & Support</span>
+      <span>🚚 Track Order</span>
+    </div>
+  </div>
+
+
+  <!-- Header -->
+  <header class="header">
+
+    <a href="#" class="brand">
+      <img src="assets/logo.png" alt="SAHAYX Logo">
+    </a>
+
+    <div class="delivery-box">
+      <span class="location-icon">📍</span>
+      <div>
+        <small>Delivering to</small>
+        <strong>Select Location</strong>
+      </div>
+    </div>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search medicines, healthcare products and more..."
+      >
+      <button onclick="searchProducts()">🔍</button>
+    </div>
+
+    <div class="header-actions">
+      <button>
+        <span>👤</span>
+        <div>
+          <small>Hello, Sign in</small>
+          <strong>My Account</strong>
+        </div>
+      </button>
+
+      <button class="cart-button">
+        🛒
+        <span class="cart-text">Cart</span>
+        <b id="cartCount">0</b>
+      </button>
+    </div>
+
+  </header>
+
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#categories">Medicines</a>
+    <a href="#healthcare">Healthcare</a>
+    <a href="#products">Popular Products</a>
+    <a href="#services">Services</a>
+    <a href="#offers">Offers</a>
+  </nav>
+
+
+  <!-- Hero -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="trusted-badge">
+        💚 TRUSTED HEALTHCARE PLATFORM
+      </div>
+
+      <h1>
+        Your Health,
+        <span>Our Priority.</span>
+      </h1>
+
+      <p>
+        Medicines, healthcare essentials and wellness products
+        delivered safely and conveniently to your doorstep.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="primary-btn" onclick="scrollToProducts()">
+          Shop Medicines →
+        </button>
+
+        <button class="secondary-btn">
+          📋 Upload Prescription
+        </button>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <strong>10K+</strong>
+          <span>Products</span>
+        </div>
+
+        <div>
+          <strong>Fast</strong>
+          <span>Delivery</span>
+        </div>
+
+        <div>
+          <strong>24/7</strong>
+          <span>Support</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+      <div class="hero-circle"></div>
+
+      <div class="medicine-card">
+        <span>💊</span>
+        <p>Quality Healthcare</p>
+      </div>
+
+      <div class="floating-card card-one">
+        🩺 <span>Health First</span>
+      </div>
+
+      <div class="floating-card card-two">
+        ✓ <span>Verified Products</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Quick Services -->
+  <section class="quick-services" id="services">
+
+    <div class="quick-card">
+      <div>💊</div>
+      <div>
+        <h3>Order Medicines</h3>
+        <p>Get medicines delivered</p>
+      </div>
+      <span>→</span>
+    </div>
+
+    <div class="quick-card">
+      <div>📋</div>
+      <div>
+        <h3>Upload Prescription</h3>
+        <p>Easy medicine ordering</p>
+      </div>
+      <span>→</span>
+    </div>
+
+    <div class="quick-card">
+      <div>🩺</div>
+      <div>
+        <h3>Healthcare Products</h3>
+        <p>Everything for your health</p>
+      </div>
+      <span>→</span>
+    </div>
+
+    <div class="quick-card">
+      <div>💬</div>
+      <div>
+        <h3>Need Help?</h3>
+        <p>We're here for you</p>
+      </div>
+      <span>→</span>
+    </div>
+
+  </section>
+
+
+  <!-- Categories -->
+  <section class="section" id="categories">
+
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">EXPLORE SAHAYX</span>
+        <h2>Shop by Category</h2>
+        <p>Everything you need for better health and wellness.</p>
+      </div>
+
+      <button class="view-all">View All Categories →</button>
+    </div>
+
+
+    <div class="category-grid">
+
+      <div class="category-card">
+        <div class="category-icon">💊</div>
+        <h3>Medicines</h3>
+        <p>All essential medicines</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">❤️</div>
+        <h3>Health Care</h3>
+        <p>Daily healthcare needs</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🩹</div>
+        <h3>First Aid</h3>
+        <p>Emergency essentials</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🧴</div>
+        <h3>Personal Care</h3>
+        <p>Skin and body care</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">👶</div>
+        <h3>Baby Care</h3>
+        <p>Care for little ones</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🧘</div>
+        <h3>Wellness</h3>
+        <p>Healthy everyday living</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Offer Banner -->
+  <section class="offer-banner" id="offers">
+
+    <div>
+      <span>SAHAYX HEALTH OFFER</span>
+
+      <h2>
+        Better Care.
+        <br>
+        Better Savings.
+      </h2>
+
+      <p>
+        Explore healthcare essentials and wellness products
+        at special prices.
+      </p>
+
+      <button onclick="scrollToProducts()">Explore Products →</button>
+    </div>
+
+    <div class="offer-icon">
+      💚
+    </div>
+
+  </section>
+
+
+  <!-- Products -->
+  <section class="section products-section" id="products">
+
+    <div class="section-header">
+
+      <div>
+        <span class="eyebrow">POPULAR ON SAHAYX</span>
+        <h2>Trending Healthcare Products</h2>
+      </div>
+
+      <button class="view-all">View All Products →</button>
+
+    </div>
+
+
+    <div class="product-grid">
+
+      <article class="product-card">
+
+        <div class="product-image">
+          <span class="discount">20% OFF</span>
+          💊
+        </div>
+
+        <div class="product-info">
+          <span class="product-type">HEALTHCARE</span>
+
+          <h3>Daily Health Essentials</h3>
+
+          <div class="rating">★★★★★ <span>(120)</span></div>
+
+          <div class="price-row">
+            <div>
+              <strong>₹299</strong>
+              <del>₹399</del>
+            </div>
+
+            <button onclick="addToCart()">Add +</button>
+          </div>
+        </div>
+
+      </article>
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+          <span class="discount">15% OFF</span>
+          🌡️
+        </div>
+
+        <div class="product-info">
+          <span class="product-type">MEDICAL DEVICES</span>
+
+          <h3>Digital Thermometer</h3>
+
+          <div class="rating">★★★★★ <span>(85)</span></div>
+
+          <div class="price-row">
+            <div>
+              <strong>₹249</strong>
+              <del>₹299</del>
+            </div>
+
+            <button onclick="addToCart()">Add +</button>
+          </div>
+        </div>
+
+      </article>
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+          <span class="discount">25% OFF</span>
+          🩹
+        </div>
+
+        <div class="product-info">
+          <span class="product-type">FIRST AID</span>
+
+          <h3>Complete First Aid Kit</h3>
+
+          <div class="rating">★★★★★ <span>(210)</span></div>
+
+          <div class="price-row">
+            <div>
+              <strong>₹499</strong>
+              <del>₹649</del>
+            </div>
+
+            <button onclick="addToCart()">Add +</button>
+          </div>
+        </div>
+
+      </article>
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+          <span class="discount">10% OFF</span>
+          🧴
+        </div>
+
+        <div class="product-info">
+          <span class="product-type">PERSONAL CARE</span>
+
+          <h3>Premium Wellness Care</h3>
+
+          <div class="rating">★★★★★ <span>(95)</span></div>
+
+          <div class="price-row">
+            <div>
+              <strong>₹349</strong>
+              <del>₹399</del>
+            </div>
+
+            <button onclick="addToCart()">Add +</button>
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- Trust -->
+  <section class="trust-section">
+
+    <div>
+      <span>✓</span>
+      <h3>Quality Products</h3>
+      <p>Carefully selected healthcare essentials</p>
+    </div>
+
+    <div>
+      <span>🔒</span>
+      <h3>Secure Shopping</h3>
+      <p>Safe and protected experience</p>
+    </div>
+
+    <div>
+      <span>🚚</span>
+      <h3>Reliable Delivery</h3>
+      <p>Convenient delivery to your doorstep</p>
+    </div>
+
+    <div>
+      <span>💬</span>
+      <h3>Customer Support</h3>
+      <p>We're here whenever you need help</p>
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="footer-brand">
+
+      <img src="assets/logo.png" alt="SAHAYX Logo">
+
+      <p>
+        Your trusted partner for healthcare,
+        wellness and everyday health essentials.
+      </p>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 SAHAYX Healthcare Assistance. All Rights Reserved.
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
