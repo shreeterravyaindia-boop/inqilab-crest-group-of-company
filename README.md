@@ -1,1 +1,0 @@
-# inqilab-crest-group-of-company
